@@ -1,3 +1,5 @@
+import time
+
 from upm import pyupm_buzzer as upmBuzzer
 from upm import pyupm_ultrasonic as upmUltraSonic
 
@@ -9,7 +11,7 @@ def buzzerFunction():
               upmBuzzer.BUZZER_FA, upmBuzzer.BUZZER_SOL, upmBuzzer.BUZZER_LA,
               upmBuzzer.BUZZER_SI];
 
-    for chord_ind in range (0,7):
+    for chord_ind in range (0,1):
         # play each note for a half second
         print(buzzer.playSound(chords[chord_ind], 500000))
         time.sleep(0.1)
@@ -18,9 +20,14 @@ def buzzerFunction():
 
     del buzzer
 
-def main():
-
-    buzzerFunction()
-
 if __name__ == '__main__':
-    main()
+
+    ultrasonic = upmUltraSonic.UltraSonic(6)
+
+    while True:
+        distance = ultrasonic.getDistance()
+        print distance
+        if ( int(distance) <= 500 ):
+            buzzerFunction()
+    time.sleep(.1)
+
