@@ -11,4 +11,4 @@ Components
 
 - [Grove - Buzzer](http://wiki.seeed.cc/Grove-Buzzer/)
 - [Grove - Ultrasonic Ranger](http://wiki.seeed.cc/Grove-Ultrasonic_Ranger/)
-- [Grove - Rotary Angle Sensor](http://wiki.seeed.cc/Grove-Rotary_Angle_Sensor/)
+- [Grove - Rotary Angle Sensor “Potentiometer”](http://wiki.seeed.cc/Grove-Rotary_Angle_Sensor/)
