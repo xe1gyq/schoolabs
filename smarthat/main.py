@@ -8,7 +8,6 @@ from upm import pyupm_gp2y0a as upmGp2y0a
 def buzzerFunction(long):
 
     buzzer = upmBuzzer.Buzzer(5)
-    print long
 
     chords = [upmBuzzer.BUZZER_DO, upmBuzzer.BUZZER_RE, upmBuzzer.BUZZER_MI,
               upmBuzzer.BUZZER_FA, upmBuzzer.BUZZER_SOL, upmBuzzer.BUZZER_LA,
@@ -16,7 +15,7 @@ def buzzerFunction(long):
 
     for chord_ind in range (0,1):
         # play each note for a half second
-        print(buzzer.playSound(chords[chord_ind], long))
+        buzzer.playSound(chords[chord_ind], long)
         time.sleep(0.1)
 
     del buzzer
@@ -35,20 +34,25 @@ if __name__ == '__main__':
 
         print("Knob Abs: %4d" % int(abs) , "Ultrasonic Distance %4d" % int(distance))
 
-        threshold = int(abs) * 2
-        print threshold
+        threshold = int(abs)
 
-        if int(distance) in xrange(0,1000):
+        if int(distance) in xrange(0,1):
+            print 'Zero'
+            buzzerFunction(100)
+        elif int(distance) in xrange(1,500):
             print 'One'
-            buzzerFunction(threshold*50)
-        elif int(distance) in xrange(1000, 2500):
+            buzzerFunction(threshold*900)
+        elif int(distance) in xrange(500,99):
             print 'Two'
-            buzzerFunction(threshold*25)
-        elif int(distance) in xrange(2500,4000):
+            buzzerFunction(threshold*400)
+        elif int(distance) in xrange(1000, 2500):
             print 'Three'
+            buzzerFunction(threshold*100)
+        elif int(distance) in xrange(2500,4000):
+            print 'Four'
             buzzerFunction(threshold)
         else:
-            print 'Four'
+            print 'Five'
 
         time.sleep(.1)
 
