@@ -14,12 +14,18 @@ Components
 - [Intel® Edison Kit for Arduino](https://www.seeedstudio.com/Intel%C2%AE-Edison-Kit-for-Arduino-p-2149.html)
 - [Grove - Buzzer](http://wiki.seeed.cc/Grove-Buzzer/)
   - Connected to Digital Output D5
+  - The alarm, the louder it sounds the shorter to an obstacle
 - [Grove - Ultrasonic Ranger](http://wiki.seeed.cc/Grove-Ultrasonic_Ranger/)
   - Connected to Digital Input D8
+  - The sensor, 
 - [Grove - Rotary Angle Sensor “Potentiometer”](http://wiki.seeed.cc/Grove-Rotary_Angle_Sensor/)
   - Connected to Analog Input A3
+- Battery Hub
+- USB Cable
 
 ## StartUp SmartHat Service
+
+This 
 
 ```sh
 root@edison:~# cat smarthat.sh
@@ -28,6 +34,8 @@ python main.py
 ```
 
 ## Source Code
+
+This is the main file for the smarthat source code
 
 ```python
 #!/usr/bin/python
