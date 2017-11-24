@@ -4,8 +4,10 @@ Each SmartHat is a piece of headwear that is fitted with a sophisticated ultraso
 
 Team Members
 
-- Tbd
-- Tbd
+- Angela A
+- Ana Paula P
+- Leah Linares
+- Hillary
 
 Components
 
@@ -14,7 +16,7 @@ Components
 - [Grove - Rotary Angle Sensor “Potentiometer”](http://wiki.seeed.cc/Grove-Rotary_Angle_Sensor/)
 - [Intel® Edison Kit for Arduino](https://www.seeedstudio.com/Intel%C2%AE-Edison-Kit-for-Arduino-p-2149.html)
 
-## StartUp Service
+## StartUp SmartHat Service
 
 ```sh
 root@edison:~# cat smarthat.sh
