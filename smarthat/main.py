@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import time
 
 from upm import pyupm_grove as grove
@@ -24,7 +26,6 @@ if __name__ == '__main__':
 
     ultrasonic = upmUltraSonic.UltraSonic(8)
     knob = grove.GroveRotary(3)
-    myIRProximity = upmGp2y0a.GP2Y0A(1)
 
     while True:
         
