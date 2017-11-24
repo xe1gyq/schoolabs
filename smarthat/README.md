@@ -13,4 +13,3 @@ Components
 - [Grove - Ultrasonic Ranger](http://wiki.seeed.cc/Grove-Ultrasonic_Ranger/)
 - [Grove - Rotary Angle Sensor “Potentiometer”](http://wiki.seeed.cc/Grove-Rotary_Angle_Sensor/)
 - [Intel® Edison Kit for Arduino](https://www.seeedstudio.com/Intel%C2%AE-Edison-Kit-for-Arduino-p-2149.html)
-
